@@ -1,0 +1,31 @@
+package com.wj.exos;
+
+public class TriCroissantTableau {
+
+	public static void main(String[] args) {
+		//tri tableau
+		int[] tab = {5, 2, 9, 10, 1};
+		
+		System.out.println(triCroissant(tab));
+	}
+	
+	
+	public static int[] triCroissant(int[] tableau) {
+		int tmp = 0;
+		boolean permut;
+		int longueur = tableau.length;
+		do {
+			 permut = false;
+			 for(int i=0; i<longueur-1; i++) {
+				 if(tableau[i] > tableau[i+1])
+					tmp =  tableau[i+1];
+				 	tableau[i] = tableau[i+1];
+				 	tableau[i+1] = tmp;
+				 	permut = true;
+			 }
+			
+		} while(permut);
+		return tableau;
+
+	}
+}

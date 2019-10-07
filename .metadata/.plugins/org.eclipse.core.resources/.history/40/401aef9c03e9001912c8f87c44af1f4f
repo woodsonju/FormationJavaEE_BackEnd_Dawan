@@ -1,0 +1,17 @@
+package com.wj;
+
+public class Tableaux2Dimensions {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Première façon de déclarer un tableau à 2D; Initialisation du prémier est obligatoire
+		 * 
+		 */
+		int[][]  tab2D = new int [2][];  
+		tab2D[0] = new int[2];
+		tab2D[1] = new int[3];
+		
+	}
+
+}
