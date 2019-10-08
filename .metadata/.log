@@ -54,3 +54,29 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-10-08 11:56:48.910
+!MESSAGE An internal error occurred during: "Hard Reset".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of reset command. Could not rename file C:\FormationJava\.metadata\._.lock939993361198135346.tmp to C:\FormationJava\.metadata\.lock
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:242)
+	at org.eclipse.egit.core.op.ResetOperation.reset(ResetOperation.java:104)
+	at org.eclipse.egit.core.op.ResetOperation.access$0(ResetOperation.java:88)
+	at org.eclipse.egit.core.op.ResetOperation$1.run(ResetOperation.java:77)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.egit.core.op.ResetOperation.execute(ResetOperation.java:81)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:107)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Could not rename file C:\FormationJava\.metadata\._.lock939993361198135346.tmp to C:\FormationJava\.metadata\.lock
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1543)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:582)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:489)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:447)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:215)
+	... 9 more
+Caused by: java.io.IOException: Could not rename file C:\FormationJava\.metadata\._.lock939993361198135346.tmp to C:\FormationJava\.metadata\.lock
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:336)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1541)
+	... 13 more

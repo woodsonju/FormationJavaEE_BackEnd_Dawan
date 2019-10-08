@@ -1,4 +1,4 @@
-package com.wj.exos;
+package com.wj.Init.exos;
 
 public class TriCroissantTableau {
 
@@ -21,9 +21,9 @@ public class TriCroissantTableau {
 			 for(int i=0; i<longueur-1; i++) {
 				 if(tableau[i] > tableau[i+1]) {
 					tmp =  tableau[i];
-					 tableau[i] = tableau[i+1];
-					 tableau[i+1] = tmp;
-					 permut = true; 
+					tableau[i] = tableau[i+1];
+					tableau[i+1] = tmp;
+					permut = true; 
 				 }
 			 }
 		} while(permut);

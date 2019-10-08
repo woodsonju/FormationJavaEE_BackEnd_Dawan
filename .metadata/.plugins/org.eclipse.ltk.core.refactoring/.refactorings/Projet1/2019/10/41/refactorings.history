@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.wj.Tableaux&apos; to &apos;Tableaux1Dimension&apos;&#x0D;&#x0A;- Original project: &apos;Projet1&apos;&#x0D;&#x0A;- Original element: &apos;com.wj.Tableaux&apos;&#x0D;&#x0A;- Renamed element: &apos;com.wj.Tableaux1Dimension&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tableaux&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.wj{Tableaux.java[Tableaux" matchStrategy="1" name="Tableaux1Dimension" qualified="false" references="true" similarDeclarations="false" stamp="1570453049550" textual="false" version="1.0"/>
-</session>
