@@ -2,24 +2,23 @@ package com.wj.poo.scenarioPOO.entite;
 
 public class Personnel {
 	
-	private Employee[] staff;
+	private Employee[] employees;
 	private int nbreEmployee;
 	private final static int MAXEMPLOYE = 100;
 	
 	
 	
 	public Personnel() {
-		super();
-		this.staff = staff;
+		//Pour initialiser les attributs on passe par les constructeurs
+		this.employees = new Employee[MAXEMPLOYE];
 		this.nbreEmployee = 0;
 	}
-
 
 
 	public void ajouterEmploye(Employee employee) {
 		++nbreEmployee;
 		if(nbreEmployee <= MAXEMPLOYE)
-			staff[nbreEmployee - 1] = employee;
+			employees[nbreEmployee - 1] = employee;
 		else {
 			System.out.println("Pas plus de " + MAXEMPLOYE + " employés");
 			return;
@@ -28,8 +27,8 @@ public class Personnel {
 	
 	public void afficherSalaire() {
 		for(int i=0; i<nbreEmployee; i++) {
-			System.out.println(staff[i].getNom() + 
-					" gagne " + staff[i].calculerSalaire() + 
+			System.out.println(employees[i].getNom() + 
+					" gagne " + employees[i].calculerSalaire() + 
 					" euros");
 		}
 	}
@@ -37,7 +36,7 @@ public class Personnel {
 	public double salaireMoyen() {
 		double somme = 0;
 		for(int i=0; i<nbreEmployee; i++) {
-			somme += staff[i].calculerSalaire();
+			somme += employees[i].calculerSalaire();
 		}
 		return somme/nbreEmployee;
 	}

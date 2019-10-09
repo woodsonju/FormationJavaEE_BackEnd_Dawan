@@ -6,9 +6,13 @@ public class TechnicienARisque extends Technicien implements ARisque {
 		super();
 	}
 
-	public TechnicienARisque(String nom, String prenom, int age, String date) {
-		super(nom, prenom, age, date);
+	
+
+	public TechnicienARisque(String nom, String prenom, int age, String date, int unites) {
+		super(nom, prenom, age, date, unites);
 	}
+
+
 
 	@Override
 	public double calculerSalaire() {

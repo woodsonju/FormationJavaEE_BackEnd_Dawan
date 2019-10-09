@@ -6,9 +6,13 @@ public class ManutentionnaireARisque extends Manutentionnaire implements ARisque
 		super();
 	}
 
-	public ManutentionnaireARisque(String nom, String prenom, int age, String date) {
-		super(nom, prenom, age, date);
+	
+
+	public ManutentionnaireARisque(String nom, String prenom, int age, String date, int heure) {
+		super(nom, prenom, age, date, heure);
 	}
+
+
 
 	@Override
 	public double calculerSalaire() {

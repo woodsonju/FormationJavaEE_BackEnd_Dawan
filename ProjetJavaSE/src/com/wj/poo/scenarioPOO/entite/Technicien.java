@@ -8,9 +8,12 @@ public class Technicien extends Employee {
 	public Technicien() {
 	}
 
-	public Technicien(String nom, String prenom, int age, String date) {
+	public Technicien(String nom, String prenom, int age, String date, int unites) {
 		super(nom, prenom, age, date);
+		this.unites = unites;
 	}
+
+
 
 	@Override
 	public double calculerSalaire() {
