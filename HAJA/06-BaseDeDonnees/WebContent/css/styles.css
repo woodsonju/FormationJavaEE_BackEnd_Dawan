@@ -1,0 +1,18 @@
+td {
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: verdana, arial;
+}
+
+* {
+	font-family: verdana, arial;
+}
+
+form {
+	display: inline;
+}
+
+body {
+	padding: 20px;
+}

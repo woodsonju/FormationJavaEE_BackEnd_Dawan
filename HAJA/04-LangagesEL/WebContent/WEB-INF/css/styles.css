@@ -1,0 +1,82 @@
+.body {
+	
+	/*
+	Police de caractères dessinée par l'équipe de Google Inc.
+	*/
+	font-family: 'Montserrat', sans-serif;
+	
+	font-size: 12pt;
+	
+	/* Distance de l'élément par rapport à son conteneur */
+	margin: 2px;
+	
+	/* Distance du texte par rapport aux bords de l'élément */
+	padding: 10px;
+}
+
+#header_title {
+	
+	/* 
+	La hauteur du navigateur correspond à 100vh, sa largeur à 100vw 
+	Pour que les unités vh et vw soit utilisable, il faut pré-définir les balises
+	avant l'appel du CSS.
+	<meta viewport> : cf. index.jsp, partie <header>
+	*/
+	font-size: 7vh;
+	
+	/*
+	Couleur de fonds de l'élément en hexadécimal
+	*/
+	background:#f1f1f1;
+	
+	/* Polices sans-serif standard web */
+	font-family: verdana, arial;
+}
+
+
+/*
+Définition des styles de notre menu horizontal
+*/
+
+.menus {
+	display: block;
+	border:1px solid #fff;
+}
+
+ul {
+	padding:0;
+ 	margin:0;
+	list-style-type:none;
+ }
+
+
+ul li a {
+	margin-right:5px; /* Distance entre les menus */
+ 	display: block;
+ 	float: left;   
+ 	width: 100px;
+ 	background-color: #6495ED;
+ 	color: white;
+ 	text-decoration:none;
+ 	text-align: center;
+ 	padding: 5px;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-size: 10pt;
+}
+
+ul li a:hover {
+	background-color:#87cfea;
+	
+}
+
+td {
+	padding: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border:1px solid #717171; 
+}
+
+.header {
+	background: #d1d1d1;
+	font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--  DESCRIPTEUR DU TAGLIB -->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+    
+   <!--  COMMENTAIRES -->
+  <description>Ma bibliothèque de fonction JSTL</description>
+  <display-name>Ma première expression langage</display-name>
+  
+  <!--  VERSION -->
+  <tlib-version>1.1</tlib-version>
+  
+  <!-- PROPRIETES DU TAGLIB -->
+  <short-name>myFn</short-name>
+  <uri>WEB-INF/tld/ElFunctions</uri>
+  
+
+  <!-- DEFINITION DES FONCTIONS -->
+  
+  <function>
+    <description>
+      Retourne la somme de deux entiers relatifs
+    </description>
+    <name>sum</name>
+    <function-class>com.wj.dawan.personnalisationTId.el.ElFunctions</function-class>
+    <function-signature>int sum(int,int)</function-signature>
+    <example>
+      ${myFn:sum(var1,var2)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+      Retourne la différence entre deux entiers relatifs
+    </description>
+    <name>substraction</name>
+    <function-class>com.wj.dawan.personnalisationTId.el.ElFunctions</function-class>
+    <function-signature>int substraction(int,int)</function-signature>
+    <example>
+      ${myFn:substraction(var1,var2)}
+    </example>
+  </function>
+  
+  <function>
+    <description>
+      Retourne le produit entre deux entiers naturels
+    </description>
+    <name>multiplication</name>
+    <function-class>com.wj.dawan.personnalisationTId.el.ElFunctions</function-class>
+    <function-signature>int multiplication(int,int)</function-signature>
+    <example>
+      ${myFn:multiplication(var1,var2)}
+    </example>
+  </function>
+  
+  
+  <function>
+    <description>
+      Retourne la division entre deux entiers naturels
+    </description>
+    <name>division</name>
+    <function-class>com.wj.dawan.personnalisationTId.el.ElFunctions</function-class>
+    <function-signature>double division(int,int)</function-signature>
+    <example>
+      ${myFn:division(var1,var2)}
+    </example>
+  </function>
+  
+  
+  <function>
+    <description>
+      Calcule le prix TTC à partir du prix HT et de la TVA
+    </description>
+    <name>prixTTC</name>
+    <function-class>com.wj.dawan.personnalisationTId.el.ElFunctions</function-class>
+    <function-signature>double price(double)</function-signature>
+   
+  </function>
+  
+</taglib>

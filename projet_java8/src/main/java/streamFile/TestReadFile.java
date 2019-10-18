@@ -14,7 +14,6 @@ public class TestReadFile {
 		//read  file into stream, try-with-ressources
 		try {
 			Stream<String> stream = Files.lines(Paths.get(fileName));
-			System.out.println(stream);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
