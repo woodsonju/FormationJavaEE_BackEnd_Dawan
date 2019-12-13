@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\CursusJavaEE\ProjetGuanjia\workplace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3287408847.index
+2190043927.index
+2887735660.index
+160038782.index
+4176432786.index
+2604144124.index

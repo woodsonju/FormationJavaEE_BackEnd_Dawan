@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- version de Maven -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- GAV : identifiant unique au projet -->
+	<groupId>fr.dawan</groupId>
+	<artifactId>projetMaven1</artifactId>
+	<version>1.0</version>
+
+	<!-- Type d'archive à générer -->
+	<packaging>jar</packaging>
+
+
+	<description>Mon projet de formation MAVEN</description>
+	<name>projetMaven1</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- variables -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.12</junit.version>
+
+		<!-- Options pour parametrer le maven-compiler-plugin afin de spécifier 
+			qu'on compile avec la version 1.8 -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<!-- On peut définir d'autres repositories (pour télécharger des dépendances) -->
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>externalAAA</id>
+			<name>My external repo</name>
+			<url>https://adresseDuDepotdistant.fr</url>
+		</repository>
+	</repositories>
+
+	<!-- Dépendances (jar) à télécharger depuis un repository -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.48</version>
+		</dependency>
+	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			<!-- Plugin permettant de génerer le javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.1.1</version>
+			</plugin>
+			<!-- Affiche le code source au format HTML -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<organization>
+		<name>Dawan</name>
+		<url>https://www.dawan.fr</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>JUSTE</name>
+			<email>juste@gmail.com</email>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<email>Jirong</email>
+			<organization>Ingenieur Java Back End</organization>
+		</contributor>
+	</contributors>
+
+
+</project>

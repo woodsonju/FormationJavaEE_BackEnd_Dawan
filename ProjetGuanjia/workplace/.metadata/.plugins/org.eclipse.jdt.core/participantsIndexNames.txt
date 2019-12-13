@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\CursusJavaEE\ProjetGuanjia\workplace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\560264171.index
+\Guanjia\src\main\java

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="formationjpa"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>fr.dawan.formationjpa.entities.Formation</class>
+		<class>fr.dawan.formationjpa.entities.Formateur</class>
+		<class>fr.dawan.formationjpa.entities.SessionFormation</class>
+
+		<properties>
+			<!-- PROPRIETES JDBC -->
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/formation" />
+			<property name="javax.persistence.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<!-- PROPRIETES HIBERNATE -->
+			<!-- Valeurs possibles : validate: validate the schema, makes no changes 
+				to the database. update: update the schema. create: creates the schema, destroying 
+				previous data. create-drop: drop the schema when the SessionFactory is closed 
+				explicitly, typically when the application is stopped. -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<!-- Le langage SQL que va être utiliser Hibernate -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>
+
+
+
+
+
+<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+
+<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" 
+	/> <property name="hibernate.hbm2ddl.auto" value="update" /> <property name="hibernate.show_sql" 
+	value="true" /> <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" 
+	/> <property name="hibernate.connection.username" value="root" /> <property 
+	name="hibernate.connection.password" value="" /> <property name="hibernate.connection.url" 
+	value="jdbc:mysql://localhost:3306/formatoion" /> -->

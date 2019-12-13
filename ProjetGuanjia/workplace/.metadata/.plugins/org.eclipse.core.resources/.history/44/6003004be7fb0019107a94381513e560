@@ -1,0 +1,16 @@
+package fr.dawan.guanjia.entities;
+
+import java.io.Serializable;
+
+public class Utilisateur implements Serializable{
+
+	private long idUtilisateur;
+	private String nom;
+	private String prenom;
+	private String email;
+	private String pwd;
+	private boolean statut;
+	private enum TypeUtilisateur;
+	
+	
+}

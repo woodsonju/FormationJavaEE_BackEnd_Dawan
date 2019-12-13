@@ -1,0 +1,120 @@
+package fr.dawan.guanjia.entities;
+
+import java.io.Serializable;
+
+public Utilisateur implements Serializable{
+
+	private long idUtilisateur;
+	private String nom;
+	private String prenom;
+	private String email;
+	private String pwd;
+	private boolean statut;
+	private TypeUtilisateur typeUtilisateur;
+	
+	public Utilisateur() {
+		super();
+	}
+
+	public Utilisateur(long idUtilisateur, String nom, String prenom, String email, String pwd, boolean statut,
+			TypeUtilisateur typeUtilisateur) {
+		super();
+		this.idUtilisateur = idUtilisateur;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.pwd = pwd;
+		this.statut = statut;
+		this.typeUtilisateur = typeUtilisateur;
+	}
+
+	public long getIdUtilisateur() {
+		return idUtilisateur;
+	}
+
+	public void setIdUtilisateur(long idUtilisateur) {
+		this.idUtilisateur = idUtilisateur;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public boolean isStatut() {
+		return statut;
+	}
+
+	public void setStatut(boolean statut) {
+		this.statut = statut;
+	}
+
+	public TypeUtilisateur getTypeUtilisateur() {
+		return typeUtilisateur;
+	}
+
+	public void setTypeUtilisateur(TypeUtilisateur typeUtilisateur) {
+		this.typeUtilisateur = typeUtilisateur;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (idUtilisateur ^ (idUtilisateur >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Utilisateur other = (Utilisateur) obj;
+		if (idUtilisateur != other.idUtilisateur)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur [idUtilisateur=" + idUtilisateur + ", nom=" + nom + ", prenom=" + prenom + ", email="
+				+ email + ", pwd=" + pwd + ", statut=" + statut + ", typeUtilisateur=" + typeUtilisateur + "]";
+	}
+	
+	
+	
+	
+	
+	
+}

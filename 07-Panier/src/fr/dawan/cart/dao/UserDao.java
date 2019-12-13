@@ -203,7 +203,6 @@ public class UserDao {
     }
     
     
-
     public static String hash(String word){
         String hash = "";
         for(int i = word.length()-1 ; i>=0 ; i--){

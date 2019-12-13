@@ -1,10 +1,16 @@
 package fr.dawan.cart.servlet;
 
+import java.io.IOException;
+import java.sql.Connection;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import fr.dawan.cart.bean.Cart;
 import fr.dawan.cart.bean.RoleEnum;
@@ -12,12 +18,6 @@ import fr.dawan.cart.bean.User;
 import fr.dawan.cart.dao.ConnectionDB;
 import fr.dawan.cart.dao.UserDao;
 import fr.dawan.cart.validator.UserValidator;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import java.io.IOException;
-import java.net.URL;
-import java.sql.Connection;
 
 
 @WebServlet(name = "UserServlet", urlPatterns = "/user")

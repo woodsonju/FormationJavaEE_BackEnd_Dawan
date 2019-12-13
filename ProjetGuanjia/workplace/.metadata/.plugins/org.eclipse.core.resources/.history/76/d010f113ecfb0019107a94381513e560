@@ -1,0 +1,13 @@
+package fr.dawan.guanjia.entities;
+
+import java.io.Serializable;
+
+public class ServiceRendu implements Serializable{
+	
+	private long idServiceRendu;
+	private String description;
+	private Prestation prestation;
+	private Client client;
+	private Prestataire prestataire;
+	
+	}

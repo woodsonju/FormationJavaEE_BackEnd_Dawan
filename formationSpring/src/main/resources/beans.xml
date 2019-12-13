@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+                http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+                
+	<bean id="contact1" class="fr.dawan.formation.domain.Contact"
+		abstract="true">
+		<property name="nom" value="BLANCO"></property>
+		<property name="prenom" value="Jean-marc"></property>
+	</bean>
+
+	<bean id="client" class="fr.dawan.formation.domain.Client"
+		parent="contact1" autowire="byName">
+		<property name="numero" value="0235684878"></property>
+		<property name="favorites">
+			<list>
+				<value>manga</value>
+				<value>sport</value>
+				<value>voyager</value>
+			</list>
+		</property>
+		<property name="numbers">
+			<set>
+				<value>1</value>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean id="adresse" class="fr.dawan.formation.domain.Adresse">
+		<constructor-arg value="2"></constructor-arg>
+		<constructor-arg value="place occitane"></constructor-arg>
+		<constructor-arg value="31300"></constructor-arg>
+		<constructor-arg value="Toulouse"></constructor-arg>
+	</bean>
+
+	<!-- constructeur -->
+	<bean id="multiplication"
+		class="fr.dawan.formation.domain.Multiplication">
+		<constructor-arg value="20"></constructor-arg>
+		<constructor-arg value="20"></constructor-arg>
+	</bean>
+	<!-- property -->
+	<bean id="multiplication1"
+		class="fr.dawan.formation.domain.Multiplication">
+		<property name="factorA" value="5"></property>
+		<property name="factorB" value="10"></property>
+	</bean>
+	
+	<bean id="multiplicationService" class="fr.dawan.formation.service.MultiplicationServiceImpl">
+		<constructor-arg ref="randomGeneratorService" name="randomGeneratorService"></constructor-arg>
+	</bean>
+	
+	<bean id="randomGeneratorService" class="fr.dawan.formation.service.RandomGeneratorServiceImpl" autowire="constructor">
+	</bean>
+
+</beans>

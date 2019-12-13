@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<list key="installedFeatures">
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="com.objectaid.uml.cls:1.2.3"/>
 		<item value="org.aspectj:1.9.2.201908130916"/>
 		<item value="org.eclipse.ajdt:2.2.4.201908130916"/>
 		<item value="org.eclipse.buildship:3.1.2.v20190903-1802"/>
 		<item value="org.eclipse.cft.server.core.feature:1.2.3.v201805291812"/>
 		<item value="org.eclipse.cft.server.ui.feature:1.0.10.v201805291812"/>
 		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
+		<item value="org.eclipse.eclemma.feature:3.1.2.201903112331"/>
 		<item value="org.eclipse.egit.mylyn:5.5.0.201909110433-r"/>
 		<item value="org.eclipse.egit:5.5.0.201909110433-r"/>
 		<item value="org.eclipse.emf.codegen.ecore.ui:2.19.0.v20190627-0837"/>
@@ -127,7 +129,31 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\CursusJavaEE\SpringBoot\spring-boot"/>
+			<item value="C:\projetFinal\guanjiaSpring"/>
+			<item value="C:\Users\Admin stagiaire.DESKTOP-8967908\git\guanjiaSpring"/>
+			<item value="C:\FormationJava\formationjpa"/>
+			<item value="C:\FormationJava\Servers"/>
+			<item value="C:\FormationJava\guanjiaProject"/>
+			<item value="C:\FormationJava\ProjetGuanjia"/>
+			<item value="C:\FormationJava\qcmProject_Moi"/>
+			<item value="C:\JavaAvancE\projet1Java"/>
 			<item value="C:\FormationJava\07-Panier"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="657"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="706"/>
+		<item key="DIALOG_Y_ORIGIN" value="142"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
 </section>
