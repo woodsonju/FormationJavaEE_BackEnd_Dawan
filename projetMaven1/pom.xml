@@ -20,7 +20,7 @@
 	<!-- variables -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 
 		<!-- Options pour parametrer le maven-compiler-plugin afin de spécifier 
 			qu'on compile avec la version 1.8 -->
